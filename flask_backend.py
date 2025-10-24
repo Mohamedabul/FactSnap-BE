@@ -267,7 +267,7 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(description="FactSnap-V Flask Backend")
-    parser.add_argument("--host", default=os.environ.get("HOST", "127.0.0.1"))
+    parser.add_argument("--host", default=os.environ.get("HOST", "0.0.0.0"))
     parser.add_argument("--port", type=int, default=int(os.environ.get("PORT", 8000)))
     parser.add_argument("--debug", action="store_true", help="Enable Flask debug mode")
 
